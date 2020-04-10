@@ -1,0 +1,64 @@
+<style>
+.wrapper {
+  /* border:1px red solid; */
+  width: 1000px;
+  margin:auto;
+}
+.calculator {
+  border:1px gray solid;
+  margin: auto;
+  margin-top: 100px;
+  width: 300px;
+  padding:2px;
+  background-color: rgb(204, 217, 247);
+}
+.input-box {
+  height:50px;
+  width: 286px;
+  padding:5px;
+  text-align: right;
+  font-size: 20px;
+  background-color: rgb(219, 216, 216);
+}
+.button-element {
+  border:1px green solid;
+  width: 73.5px;
+  height:50px;
+  margin-top;:2px
+}
+.margin-left-2px {
+  margin-left:2px;
+}
+.marging-top-2px {
+  margin-top:2px;
+}
+</style>
+
+<div class="wrapper">
+  <div class="calculator">
+    
+    <input type="text" class="input-box" [value]="output" readonly />
+    
+    <input type="button" class="button-element marging-top-2px" value="1" (click)='inputData(1)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="2" (click)='inputData(2)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="3" (click)='inputData(3)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="=" (click)="inputData('=')" >
+    
+    <input type="button" class="button-element marging-top-2px" value="4" (click)='inputData(4)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="5" (click)='inputData(5)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="6" (click)='inputData(6)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="+" (click)="inputData('+')" >
+    
+    <input type="button" class="button-element marging-top-2px" value="7" (click)='inputData(7)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="8" (click)='inputData(8)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="9" (click)='inputData(9)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="-" (click)="inputData('-')" >
+    
+    <input type="button" class="button-element marging-top-2px" value="AC" (click)="inputData('A')" >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="0" (click)='inputData(0)' >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="/" (click)="inputData('/')" >
+    <input type="button" class="button-element margin-left-2px marging-top-2px" value="*" (click)="inputData('*')" >
+    
+  </div>
+</div>
+
